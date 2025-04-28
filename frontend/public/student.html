@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сертификаты студента</title>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.0.0/dist/ethers.umd.min.js"></script>
+  <script type="module" src="../src/student.js" defer></script>
+</head>
+<body>
+  <h1>Добро пожаловать, студент!</h1>
+
+  <!-- Подключение MetaMask -->
+  <div>
+    <button id="connectButton">Подключить MetaMask</button>
+    <p id="walletAddress"></p>
+  </div>
+
+  <!-- Кнопка для получения сертификатов -->
+  <div>
+    <button id="getCertificatesButton">Получить сертификаты</button>
+  </div>
+
+  <h3>Ваши сертификаты:</h3>
+  <div id="certificatesList"></div>
+</body>
+</html>
